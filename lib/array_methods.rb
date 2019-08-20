@@ -1,4 +1,4 @@
-
+# require "pry"
 # describe 'find_element_index(array, value_to_find)' do
 #     it 'takes in an array and a value and returns the index of that value' do
 
@@ -19,10 +19,9 @@ def find_max_value(array)
   return max
 end
 
-
 def find_min_value(array)
   counter = 0
-  max = 0
+  min = 100
     while counter < array.size
       if array[counter] < min 
         min = array[counter]
@@ -31,4 +30,4 @@ def find_min_value(array)
     end
   return min
 end
-end
+# binding.pry
